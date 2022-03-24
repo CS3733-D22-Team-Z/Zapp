@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.wpi.teamZ.controllers.LaundryServiceController">
+   <children>
+      <JFXButton layoutX="14.0" layoutY="15.0" style="-fx-translate-x: 126; -fx-translate-y: 209; -fx-pref-width: 58; -fx-pref-height: 26; -fx-background-color: #0075FF;" text="Submit" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton id="backButton" layoutX="14.0" layoutY="14.0" onAction="#navDefault" prefHeight="90.0" prefWidth="191.0" style="-fx-pref-width: 128; -fx-pref-height: 26; -fx-background-radius: 2; -fx-background-color: #0075FF; -fx-translate-x: 126; -fx-translate-y: 13;" text="Back to Dashboard" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <ComboBox layoutX="14.0" layoutY="15.0" prefWidth="150.0" promptText="Select Linens" style="-fx-background-color: #ffffff; -fx-translate-x: 126; -fx-translate-y: 164;">
+         <effect>
+            <DropShadow />
+         </effect>
+      </ComboBox>
+      <Label layoutX="13.0" layoutY="21.0" style="-fx-translate-x: 126; -fx-translate-y: 110; -fx-pref-width: 220; -fx-pref-height: 24; -fx-background-color: #ffffff; -fx-background-radius: 2;" text="Enter room number" textFill="#9d9d9d">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="Segoe UI" size="12.0" />
+         </font>
+      </Label>
+      <Text layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-translate-y: 54; -fx-translate-x: 126;" text="Laundry Service Request">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#9d9d9d" layoutX="14.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-translate-x: 126; -fx-translate-y: 74;" text="Enter the fields below to submite request">
+         <font>
+            <Font name="Segoe UI" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="14.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-translate-y: 54; -fx-translate-x: 126;" text="Room Number">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="14.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-translate-y: 54; -fx-translate-x: 126;" text="Linen Type">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
