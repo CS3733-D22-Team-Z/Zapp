@@ -1,55 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.jfoenix.controls.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.effect.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.wpi.teamZ.controllers.LaundryServiceController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.wpi.teamZ.controllers.LaundryServiceController">
    <children>
-      <JFXButton layoutX="14.0" layoutY="15.0" style="-fx-translate-x: 126; -fx-translate-y: 209; -fx-pref-width: 58; -fx-pref-height: 26; -fx-background-color: #0075FF;" text="Submit" textFill="WHITE">
+      <JFXButton id="backButton" layoutX="23.0" onAction="#navDefault" prefHeight="90.0" prefWidth="191.0" style="-fx-pref-width: 128; -fx-pref-height: 26; -fx-background-radius: 2; -fx-background-color: #0075FF; -fx-translate-x: 126; -fx-translate-y: 13;" text="Back to Dashboard" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Bold" size="10.0" />
+         </font>
+      </JFXButton>
+      <Text layoutX="23.0" layoutY="9.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-translate-y: 54; -fx-translate-x: 126;" text="Laundry Service Request Form">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
-      </JFXButton>
-      <JFXButton id="backButton" layoutX="14.0" layoutY="14.0" onAction="#navDefault" prefHeight="90.0" prefWidth="191.0" style="-fx-pref-width: 128; -fx-pref-height: 26; -fx-background-radius: 2; -fx-background-color: #0075FF; -fx-translate-x: 126; -fx-translate-y: 13;" text="Back to Dashboard" textFill="WHITE">
+      </Text>
+      <Label layoutX="22.0" layoutY="58.0" prefHeight="17.0" prefWidth="211.0" style="-fx-font-family: &quot;Montserrat-Bold&quot;; -fx-translate-x: 126; -fx-translate-y: 10;" text="Enter the fields below to request laundry service." textFill="#9d9d9d">
          <font>
-            <Font name="Segoe UI Bold" size="12.0" />
-         </font>
-      </JFXButton>
-      <ComboBox layoutX="14.0" layoutY="15.0" prefWidth="150.0" promptText="Select Linens" style="-fx-background-color: #ffffff; -fx-translate-x: 126; -fx-translate-y: 164;">
-         <effect>
-            <DropShadow />
-         </effect>
-      </ComboBox>
-      <Label layoutX="13.0" layoutY="21.0" style="-fx-translate-x: 126; -fx-translate-y: 110; -fx-pref-width: 220; -fx-pref-height: 24; -fx-background-color: #ffffff; -fx-background-radius: 2;" text="Enter room number" textFill="#9d9d9d">
-         <effect>
-            <DropShadow />
-         </effect>
-         <font>
-            <Font name="Segoe UI" size="12.0" />
+            <Font name="Segoe UI Bold" size="7.5" />
          </font>
       </Label>
-      <Text layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-translate-y: 54; -fx-translate-x: 126;" text="Laundry Service Request">
+      <Label layoutX="22.0" layoutY="82.0" prefHeight="17.0" prefWidth="158.0" style="-fx-font-family: &quot;Segoe UI&quot;; -fx-translate-x: 126; -fx-translate-y: 10;" text="Patient Name" textFill="#7b7b7b">
          <font>
-            <Font name="System Bold" size="12.0" />
+            <Font name="Segoe UI Bold" size="9.0" />
          </font>
-      </Text>
-      <Text fill="#9d9d9d" layoutX="14.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-translate-x: 126; -fx-translate-y: 74;" text="Enter the fields below to submite request">
+      </Label>
+      <TextField layoutX="148.0" layoutY="117.0" promptText="Enter patient name">
+         <effect>
+            <DropShadow />
+         </effect>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TextField>
+      <Label layoutX="23.0" layoutY="141.0" prefHeight="17.0" prefWidth="158.0" style="-fx-font-family: &quot;Segoe UI&quot;; -fx-translate-x: 126; -fx-translate-y: 10;" text="Patient ID" textFill="#7b7b7b">
          <font>
-            <Font name="Segoe UI" size="12.0" />
+            <Font name="Segoe UI Bold" size="9.0" />
          </font>
-      </Text>
-      <Text layoutX="14.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-translate-y: 54; -fx-translate-x: 126;" text="Room Number">
+      </Label>
+      <TextField layoutX="149.0" layoutY="174.0" promptText="Enter patient ID">
+         <effect>
+            <DropShadow />
+         </effect>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TextField>
+      <Label layoutX="23.0" layoutY="198.0" prefHeight="17.0" prefWidth="158.0" style="-fx-font-family: &quot;Segoe UI&quot;; -fx-translate-x: 126; -fx-translate-y: 10;" text="Room Number" textFill="#7b7b7b">
          <font>
-            <Font name="System Bold" size="12.0" />
+            <Font name="Segoe UI Bold" size="9.0" />
          </font>
-      </Text>
-      <Text layoutX="14.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-translate-y: 54; -fx-translate-x: 126;" text="Linen Type">
+      </Label>
+      <TextField layoutX="149.0" layoutY="231.0" promptText="Enter room number">
+         <effect>
+            <DropShadow />
+         </effect>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TextField>
+      <Label layoutX="24.0" layoutY="257.0" prefHeight="17.0" prefWidth="158.0" style="-fx-font-family: &quot;Montserrat Bold&quot;; -fx-translate-x: 126; -fx-translate-y: 10;" text="Linen Type" textFill="#7b7b7b">
          <font>
-            <Font name="System Bold" size="12.0" />
+            <Font name="Segoe UI Bold" size="9.0" />
          </font>
-      </Text>
+      </Label>
+      <ChoiceBox layoutX="151.0" layoutY="290.0" prefHeight="25.0" prefWidth="149.0" style="-fx-background-color: &quot;FFFFFF&quot;; -fx-background-radius: 2;">
+         <effect>
+            <DropShadow />
+         </effect>
+      </ChoiceBox>
+      <JFXButton layoutX="25.0" layoutY="325.0" prefWidth="111.0" ripplerFill="#0075ff" style="-fx-background-radius: 2; -fx-translate-y: 13; -fx-translate-x: 126; -fx-pref-width: 70; -fx-pref-height: 26; -fx-background-color: #0075FF; -fx-font-family: &quot;Segoe UI&quot;;" text=" Submit" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Bold" size="10.0" />
+         </font>
+      </JFXButton>
    </children>
 </AnchorPane>
