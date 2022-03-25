@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="MedicalEquipmentDeliveryMedicalEquipmentDelivery" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.wpi.teamZ.controllers.MedicalEquipmentDelivery">
+   <children>
+      <JFXButton fx:id="backButton" layoutX="120.0" layoutY="19.0" onAction="#onBackButtonClicked" style="-fx-background-color: #0075FF;" text="&lt; Back to Dashboard" textFill="#f8f8f8">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="120.0" layoutY="49.0" prefHeight="21.0" prefWidth="182.0" text="Medical Equipment Request">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="120.0" layoutY="77.0" prefHeight="21.0" prefWidth="236.0" text="Enter feilds below and submit request">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Label>
+      <Label layoutX="120.0" layoutY="132.0" prefHeight="17.0" prefWidth="157.0" text="Room Number" />
+      <Label layoutX="120.0" layoutY="211.0" prefHeight="17.0" prefWidth="113.0" text="Equipment" />
+      <TextField layoutX="119.0" layoutY="157.0" prefHeight="31.0" prefWidth="152.0" />
+      <ChoiceBox layoutX="120.0" layoutY="249.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>
