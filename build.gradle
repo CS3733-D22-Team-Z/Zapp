@@ -22,7 +22,7 @@ javafx {
 }
 
 // Include dependent libraries in archive.
-mainClassName = "com.company.application.Main"
+mainClassName = "edu.wpi.teamZ.Main"
 
 jar {
     manifest {
