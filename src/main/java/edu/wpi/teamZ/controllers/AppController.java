@@ -13,7 +13,7 @@ public class AppController {
 
   @FXML
   public void navMedicalEquipment(ActionEvent event) throws IOException {
-    System.out.println("navigating to default from language interpreter");
+    System.out.println("navigating to medical from default");
     Parent root =
         FXMLLoader.load(
             getClass()
@@ -27,7 +27,7 @@ public class AppController {
 
   @FXML
   public void navLab(ActionEvent event) throws IOException {
-    System.out.println("navigating to default from language interpreter");
+    System.out.println("navigating to lab from default");
     Parent root =
         FXMLLoader.load(
             getClass().getClassLoader().getResource("edu/wpi/teamZ/views/labServiceRequest.fxml"));
@@ -39,7 +39,7 @@ public class AppController {
 
   @FXML
   public void navMedicine(ActionEvent event) throws IOException {
-    System.out.println("navigating to default from language interpreter");
+    System.out.println("navigating to medicine from default");
     Parent root =
         FXMLLoader.load(
             getClass().getClassLoader().getResource("edu/wpi/teamZ/views/medicineRequest.fxml"));
@@ -51,7 +51,7 @@ public class AppController {
 
   @FXML
   public void navMeal(ActionEvent event) throws IOException {
-    System.out.println("navigating to default from language interpreter");
+    System.out.println("navigating to meal from default");
     Parent root =
         FXMLLoader.load(
             getClass().getClassLoader().getResource("edu/wpi/teamZ/views/Meal Service.fxml"));
@@ -63,7 +63,7 @@ public class AppController {
 
   @FXML
   public void navLanguage(ActionEvent event) throws IOException {
-    System.out.println("navigating to default from language interpreter");
+    System.out.println("navigating to language from default");
     Parent root =
         FXMLLoader.load(
             getClass()
@@ -77,10 +77,24 @@ public class AppController {
 
   @FXML
   public void navLaundry(ActionEvent event) throws IOException {
-    System.out.println("navigating to default from language interpreter");
+    System.out.println("navigating to laundry from default");
     Parent root =
         FXMLLoader.load(
             getClass().getClassLoader().getResource("edu/wpi/teamZ/views/laundryService.fxml"));
+    Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+    Scene scene = new Scene(root);
+    stage.setScene(scene);
+    stage.show();
+  }
+
+  @FXML
+  public void navComputer(ActionEvent event) throws IOException {
+    System.out.println("navigating to computer from default");
+    Parent root =
+        FXMLLoader.load(
+            getClass()
+                .getClassLoader()
+                .getResource("edu/wpi/teamZ/views/ComputerServiceRequest.fxml"));
     Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
     Scene scene = new Scene(root);
     stage.setScene(scene);
