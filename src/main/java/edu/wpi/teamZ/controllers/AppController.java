@@ -86,4 +86,18 @@ public class AppController {
     stage.setScene(scene);
     stage.show();
   }
+
+  @FXML
+  public void navComputer(ActionEvent event) throws IOException {
+    System.out.println("navigating to default from language interpreter");
+    Parent root =
+        FXMLLoader.load(
+            getClass()
+                .getClassLoader()
+                .getResource("edu/wpi/teamZ/views/ComputerServiceRequest.fxml"));
+    Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+    Scene scene = new Scene(root);
+    stage.setScene(scene);
+    stage.show();
+  }
 }

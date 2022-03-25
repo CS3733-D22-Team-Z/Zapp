@@ -130,5 +130,23 @@
             </ImageView>
          </children>
       </Group>
+      <Group layoutX="135.0" layoutY="307.0">
+         <children>
+            <Button id="ComputerServiceButton" fx:id="ComputerServiceButton" layoutX="9.0" layoutY="10.0" mnemonicParsing="false" onAction="#navComputer" prefHeight="25.0" prefWidth="199.0" style="-fx-background-color: #FFFFFF; -fx-alignment: LEFT; -fx-pref-width: 220; -fx-pref-height: 26; -fx-background-radius: 5;" text="Computer Service">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font>
+            </Button>
+            <Pane layoutX="205.0" layoutY="13.0" prefHeight="26.0" prefWidth="23.0" style="-fx-background-color: #0075FF; -fx-pref-height: 20; -fx-pref-width: 20; -fx-background-radius: 3;" />
+            <ImageView fitHeight="13.0" fitWidth="14.0" layoutX="210.0" layoutY="16.800003051757812" pickOnBounds="true" preserveRatio="true" smooth="false">
+               <image>
+                  <Image url="@../../../../../../../../Downloads/chevron-right.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Group>
    </children>
 </AnchorPane>
