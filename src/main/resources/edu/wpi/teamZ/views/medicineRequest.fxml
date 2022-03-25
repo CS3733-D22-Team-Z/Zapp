@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #F6F6F6;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.wpi.teamZ.controllers.medicineRequestController">
+   <children>
+      <Label layoutX="86.0" layoutY="59.0" prefHeight="18.0" prefWidth="110.0" text="Medicine Request">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="86.0" layoutY="21.0" onAction="#backToDashboard" style="-fx-background-color: #0075FF;" text="&lt; Back to dashboard" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="9.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="86.0" layoutY="77.0" text="Select Medicine Type ">
+         <font>
+            <Font size="7.5" />
+         </font>
+      </Label>
+      <ChoiceBox layoutX="83.0" layoutY="187.0" prefWidth="150.0" />
+      <Label layoutX="86.0" layoutY="98.0" text="Please type desired medicine " textFill="#7b7b7b">
+         <font>
+            <Font size="7.0" />
+         </font>
+      </Label>
+      <Label layoutX="83.0" layoutY="162.0" text="Please select a room for the medicince to be delivered " textFill="#7b7b7b">
+         <font>
+            <Font size="7.0" />
+         </font>
+      </Label>
+      <Label layoutX="83.0" layoutY="239.0" text="Please select a time for the medicine to be delievered" textFill="#7b7b7b">
+         <font>
+            <Font size="7.0" />
+         </font>
+      </Label>
+      <ChoiceBox layoutX="83.0" layoutY="257.0" prefHeight="26.0" prefWidth="73.0" />
+      <TextField layoutX="82.0" layoutY="122.0" />
+   </children>
+</AnchorPane>
