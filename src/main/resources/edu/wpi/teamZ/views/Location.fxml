@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.wpi.teamZ.controllers.LocationController">
+   <children>
+      <Label layoutX="144.0" layoutY="25.0" text="Location Data Table">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="145.0" layoutY="44.0" text="Data table of all locations in map database" textFill="#9d9d9d">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Label>
+      <TableView layoutX="144.0" layoutY="72.0" prefHeight="302.0" prefWidth="429.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="69.0" text="C2" />
+        </columns>
+         <effect>
+            <DropShadow />
+         </effect>
+      </TableView>
+   </children>
+</AnchorPane>

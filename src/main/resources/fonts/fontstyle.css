@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('fonts/Montserrat-Bold.ttf');
+}
+
+.label {
+    -fx-font-family: 'Montserrat';
+    -fx-font-size: 20;
+}
+
+.button .text {
+    -fx-font-family: 'Montserrat';
+}

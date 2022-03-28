@@ -22,7 +22,7 @@ public class App extends Application {
   @Override
   public void start(Stage primaryStage) throws IOException {
     Text text = new Text(1.0, 2.0, "Custom Font");
-    Font font = Font.loadFont("resources/fonts/Montserrat-Bold.ttf", 45);
+    Font font = Font.loadFont("resources/fonts/fontstyle.css", 45);
     text.setFont(font);
     text.setFill(Color.BROWN);
     text.setStroke(Color.BLUEVIOLET);
